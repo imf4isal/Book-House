@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "name": "Zero To One",
+    "writer": "Peter Thiel",
+    "pages": 354,
+    "price": 11,
+    "category": "Business",
+    "summary": "lorem ipsum"
+  },
+  {
+    "id": 1,
+    "name": "The 4-Hour Work Week",
+    "writer": "Timothy Ferriss",
+    "pages": 454,
+    "price": 17,
+    "category": "Self Improvement",
+    "summary": "lorem ipsum"
+  },
+  {
+    "id": 2,
+    "name": "How Google Works",
+    "writer": "Eric Schmidt",
+    "pages": 224,
+    "price": 21,
+    "category": "Technology",
+    "summary": "lorem ipsum"
+  },
+  {
+    "id": 3,
+    "name": "The Personal MBA",
+    "writer": "Josh Kaufman",
+    "pages": 554,
+    "price": 31,
+    "category": "Business",
+    "summary": "lorem ipsum"
+  },
+  {
+    "id": 4,
+    "name": "Man's Search for Meaning",
+    "writer": "Viktor Frankl",
+    "pages": 154,
+    "price": 9,
+    "category": "Spirituality",
+    "summary": "lorem ipsum"
+  },
+  {
+    "id": 5,
+    "name": "Building a Storybrand",
+    "writer": "Donald Miller",
+    "pages": 254,
+    "price": 15,
+    "category": "Business",
+    "summary": "lorem ipsum"
+  }
+]
