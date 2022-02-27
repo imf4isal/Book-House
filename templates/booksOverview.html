@@ -21,6 +21,14 @@
         font-weight: normal;
         }
 
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+        }
+
         ol, ul {
         list-style: none;
         }
@@ -30,11 +38,96 @@
         height: auto;
         }
 
+        .card-container {
+             
+        }
+        .card {
+            background-size: cover;
+            width: 180px;
+            height: 250px; 
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px grey;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            transition: all .3s ease;
+
+            
+        }
+        .overlay {
+            padding: .8rem;
+            width: 180px;
+            height: 250px; 
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgb(52, 85, 75);
+            opacity: .8;
+            z-index: 2;
+            transition: all .3s ease;
+            
+        }
+
+       .card:hover {
+           background-position-y: -10px;
+       }
+        .card:hover .overlay {
+            top: 0;
+        }
+
+        .content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 10px;
+            opacity: 0;
+            transition: all .4s ease-in;
+            color: white;
+            z-index: 99;
+
+        }
+        .card:hover .content {
+            top: 0;
+
+            opacity: 1;
+
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 15px 0;
+            background-color: rgb(42, 114, 114);
+            color: white;
+            border: none;
+            outline: none;
+            opacity: 1;
+            z-index: 40;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
     <div class="main">
-        
-    </div>
+        <div class="card-container">
+
+            <div class="card" style="background-image: url('./../originals.png');">
+                <div class="overlay">
+                    
+                </div>
+                <div class="content">
+                    
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt ducimus nemo </p>
+                    <button>
+                        <a href="#">detail</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
 </body>
 </html>
