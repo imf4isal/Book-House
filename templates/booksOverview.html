@@ -42,7 +42,6 @@
              
         }
         .card {
-            background-size: cover;
             width: 180px;
             height: 250px; 
             border-radius: 5px;
@@ -50,10 +49,20 @@
             position: relative;
             overflow: hidden;
             letter-spacing: 1px;
-            transition: all .3s ease;
-
-            
+            transition: all .3s ease;            
         }
+        .back {
+            width: 180px;
+            height: 250px; 
+            position: absolute;
+            background-size: cover;
+
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all .3s ease;
+        }
+
         .overlay {
             padding: .8rem;
             width: 180px;
@@ -68,8 +77,12 @@
             
         }
 
-       .card:hover {
+       /* .card:hover {
            background-position-y: -10px;
+       } */
+
+       .card:hover .back {
+           transform: scale(1.1);
        }
         .card:hover .overlay {
             top: 0;
@@ -114,7 +127,8 @@
     <div class="main">
         <div class="card-container">
 
-            <div class="card" style="background-image: url('./../originals.png');">
+            <div class="card">
+                <div class="back"  style="background-image: url('./../originals.png');"></div>
                 <div class="overlay">
                     
                 </div>
